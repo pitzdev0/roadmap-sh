@@ -1,0 +1,28 @@
+:root {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0 10px;
+}
+
+h3 {
+	color: #53ae62;
+	font-size: 1.1rem;
+}
+
+h4 {
+	color: #3984ca;
+	margin-bottom: 0;
+}
+
+.education,
+.experience {
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+	span {
+		margin: 0;
+		padding: 0;
+	}
+}
