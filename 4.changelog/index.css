@@ -1,0 +1,90 @@
+body {
+	box-sizing: border-box;
+	font-family: 'Inria Sans', sans-serif;
+}
+
+.container {
+	width: 75%;
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid green; */
+
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		color: gray;
+		margin-bottom: 2rem;
+	}
+}
+
+.timeline {
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 2rem;
+}
+
+.timeline::before {
+	content: '';
+	position: absolute;
+	left: 270px;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	background-color: black;
+}
+
+/* CONFIGURACION DE LOS TIME STEPS */
+.timeline-item {
+	display: flex;
+	margin-bottom: 20px;
+	align-items: baseline;
+	position: relative;
+
+	.date {
+		width: 30%;
+		text-align: right;
+		padding-right: 50px;
+		font-weight: bold;
+		margin-bottom: 0.5rem;
+		color: gray;
+	}
+
+	.content {
+		background-color: white;
+		padding: 10px;
+		border: 1px solid lightgray;
+		border-radius: 5px;
+		text-align: left;
+	}
+}
+
+.timeline-item::after {
+	content: '';
+	position: absolute;
+	left: 224px;
+	top: 15px;
+	width: 15px;
+	height: 15px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.changelog-button {
+	padding: 10px 0px;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+	margin-top: 20px;
+}
+
+.changelog-button:hover {
+	background-color: darkgray;
+}
