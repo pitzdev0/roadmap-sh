@@ -1,4 +1,5 @@
 packages:
-   - '1. singlepage-cv'
-   - '2. basic-html'
-   - '3. personal-portfolio'
+   - '1.singlepage-cv'
+   - '2.basic-html'
+   - '3.personal-portfolio'
+   - '4.changelog'
