@@ -17,6 +17,12 @@ A series of projects to learn web development and best practices.
    -  Following https://roadmap.sh/projects/basic-html-website
 
 3. Improved Portfolio
+
    -  including CSS and media queries
    -  Technologies Used: (html & css + SEO)
    -  Following https://roadmap.sh/projects/portfolio-website
+
+4. Changelog
+   -  including CSS and media queries
+   -  Technologies Used: (html & css + SEO)
+   -  following https://roadmap.sh/projects/changelog-component
