@@ -1,0 +1,176 @@
+:root {
+	padding: 5px 15px;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Inria Sans', sans-serif;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+
+	& ul {
+		list-style: none;
+
+		& li {
+			display: inline-block;
+			padding: 0;
+		}
+
+		& li:not(:last-child)::after {
+			content: ' / ';
+		}
+	}
+}
+
+.username {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 23dvh;
+	& h1 {
+		font-size: 3rem;
+		margin-bottom: 0;
+	}
+}
+
+.resume {
+	display: flex;
+	gap: 15px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+	.projects {
+		width: 25%;
+		border-right: 1px solid black;
+
+		& p {
+			border-bottom: 1px solid black;
+			padding-bottom: 10px;
+		}
+	}
+	.work {
+		width: 40%;
+		padding: 0 25px;
+		border-right: 1px solid black;
+
+		div:first-child {
+			border-bottom: 1px solid black;
+		}
+	}
+
+	.education {
+		width: 30%;
+		padding: 0 25px;
+	}
+}
+
+.reviews {
+	display: flex;
+
+	.review {
+		border: 1px solid black;
+		border-radius: 25px;
+		padding: 10px;
+		margin: 10px;
+	}
+
+	.author {
+		color: gray;
+	}
+}
+
+.copyright {
+	margin-top: 25px;
+	text-align: center;
+}
+
+@media (width <= 600px) {
+	.username {
+		flex-direction: column;
+	}
+	.header {
+		flex-direction: column;
+
+		h1 {
+			margin-top: 0;
+		}
+	}
+
+	.title {
+		h1 {
+			font-size: 2.5rem;
+		}
+	}
+	.navlist {
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.resume {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border: none;
+
+		h2 {
+			border: 1px solid gray;
+		}
+		.projects,
+		.work,
+		.education {
+			width: 100%;
+			border: none;
+		}
+
+		.projects p {
+			background-color: lightgray;
+			margin: 0 auto;
+			padding: 10px 0px;
+		}
+
+		.experience {
+			background-color: lightgray;
+			padding: 15px;
+			text-align: left;
+			border-bottom: 1px solid black;
+
+			h4 {
+				margin: 0;
+				padding-bottom: 10px;
+			}
+
+			p {
+				margin: 0;
+				padding-bottom: 10px;
+			}
+		}
+
+		.education {
+			text-align: left;
+
+			span {
+				display: block;
+				padding-left: 15px;
+			}
+
+			h2 {
+				text-align: center;
+			}
+		}
+	}
+
+	.reviews {
+		flex-direction: column;
+		text-wrap: pretty;
+	}
+}
